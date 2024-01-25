@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.restaurant.restaurant_spring.RestaurantSpringApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2024-01-25T11:10:08" hostname="Nghis-MacBook-Pro.local" time="0.355">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.restaurant.restaurant_spring.RestaurantSpringApplicationTests" time="0.355"/>
+  <system-out><![CDATA[18:10:06.779 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.restaurant.restaurant_spring.RestaurantSpringApplicationTests]: RestaurantSpringApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+18:10:06.827 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.restaurant.restaurant_spring.RestaurantSpringApplication for test class com.restaurant.restaurant_spring.RestaurantSpringApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.2.1)
+
+2024-01-25T18:10:07.015+07:00  INFO 67710 --- [    Test worker] c.r.r.RestaurantSpringApplicationTests   : Starting RestaurantSpringApplicationTests using Java 19 with PID 67710 (started by nghile in /Users/nghile/Desktop/learjava/restaurant_spring)
+2024-01-25T18:10:07.016+07:00  INFO 67710 --- [    Test worker] c.r.r.RestaurantSpringApplicationTests   : No active profile set, falling back to 1 default profile: "default"
+2024-01-25T18:10:07.312+07:00  INFO 67710 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-01-25T18:10:07.348+07:00  INFO 67710 --- [    Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 33 ms. Found 3 JPA repository interfaces.
+2024-01-25T18:10:07.576+07:00  INFO 67710 --- [    Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-01-25T18:10:07.597+07:00  INFO 67710 --- [    Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.4.1.Final
+2024-01-25T18:10:07.610+07:00  INFO 67710 --- [    Test worker] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-01-25T18:10:07.704+07:00  INFO 67710 --- [    Test worker] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-01-25T18:10:07.715+07:00  INFO 67710 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-01-25T18:10:07.854+07:00  INFO 67710 --- [    Test worker] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@504b8705
+2024-01-25T18:10:07.855+07:00  INFO 67710 --- [    Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-01-25T18:10:07.885+07:00  WARN 67710 --- [    Test worker] org.hibernate.orm.deprecation            : HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2024-01-25T18:10:08.273+07:00  INFO 67710 --- [    Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-01-25T18:10:08.280+07:00  INFO 67710 --- [    Test worker] org.hibernate.orm.connections.access     : HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7e84a52b] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+2024-01-25T18:10:08.362+07:00  INFO 67710 --- [    Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+Hibernate: select u1_0.id,u1_0.email,u1_0.name,u1_0.password,u1_0.user_role from users u1_0 where u1_0.user_role=?
+2024-01-25T18:10:08.671+07:00  WARN 67710 --- [    Test worker] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-01-25T18:10:08.835+07:00  INFO 67710 --- [    Test worker] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3b8c15de, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@26398f67, org.springframework.security.web.context.SecurityContextHolderFilter@771ede0d, org.springframework.security.web.header.HeaderWriterFilter@334ac669, org.springframework.security.web.authentication.logout.LogoutFilter@71b6edfb, com.restaurant.restaurant_spring.configurations.JwtAuthenticationFilter@7ead0b51, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@54c697c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@62075e3d, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@64ff0eaa, org.springframework.security.web.session.SessionManagementFilter@588614f9, org.springframework.security.web.access.ExceptionTranslationFilter@1a67bcaf, org.springframework.security.web.access.intercept.AuthorizationFilter@7c35d7d]
+2024-01-25T18:10:08.988+07:00  INFO 67710 --- [    Test worker] c.r.r.RestaurantSpringApplicationTests   : Started RestaurantSpringApplicationTests in 2.105 seconds (process running for 2.71)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
